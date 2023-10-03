@@ -1,0 +1,13 @@
+<!-- esempio di Direttiva `*ngIf` -->
+<div *ngIf="isOpen" class="container d-flexs">È aperto!</div>
+<div *ngIf="!isOpen" class="container d-flexs">È CHIUSO!</div>
+
+<button (click)="isOpen = !isOpen" class="mx-5">Cambia valore</button>
+<h2 class="container d-flexs">il valore della prop isOpen è {{ isOpen }}</h2>
+
+<!-- esempio di Direttiva `*ngFor` -->
+<div *ngFor="let num of numbers" class="mx-5">
+  <p>{{ num }}</p>
+</div>
+
+<div class="container">{{ stringa }}</div>
