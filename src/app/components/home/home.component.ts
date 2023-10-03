@@ -9,6 +9,7 @@ export class HomeComponent implements OnInit, OnDestroy, OnChanges {
   isOpen: boolean = false;
   numbers: number[] = [4, 8, 15, 16, 23, 42];
   stringa: string = '';
+  tidy: boolean = false;
 
   constructor() {
     console.log('io sono il Costruttore');
@@ -26,6 +27,11 @@ export class HomeComponent implements OnInit, OnDestroy, OnChanges {
     setTimeout(() => {
       this.stringa = "sono la stringa dell'OnInit";
     }, 5000);
+    setTimeout(() => {
+      this.tidy = true;
+      console.log('Risistemato il layout per la consegna esercizio pulita');
+    }, 25000);
+    // dopo 5 + 25 secondi cambia il layout per l'esercizio
   }
 
   ngOnDestroy(): void {
