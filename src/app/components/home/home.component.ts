@@ -30,8 +30,8 @@ export class HomeComponent implements OnInit, OnDestroy, OnChanges {
     setTimeout(() => {
       this.tidy = true;
       console.log('Risistemato il layout per la consegna esercizio pulita');
-    }, 25000);
-    // dopo 5 + 25 secondi cambia il layout per l'esercizio
+    }, 10000);
+    // dopo 5 + 10 secondi cambia il layout per l'esercizio
   }
 
   ngOnDestroy(): void {
