@@ -1,19 +1,21 @@
 <!-- Prova preliminari in classe -->
 <app-navbar></app-navbar>
+
+<div class="container d-flexs alert alert-secondary">
+  <h1>Sky - Homage to Sky Children of The Light</h1>
+  <p>
+    <span *ngIf="destroy">🏚 </span>
+    <span *ngIf="!destroy">🏠 </span>
+    Work In Project
+    <button (click)="destroy = !destroy" class="mx-5">Muratori</button>
+  </p>
+</div>
+
 <!-- <app-navbar></app-navbar> -->
 <app-home></app-home>
 
 <hr />
 
 <!-- provare a far funzionare un OnDestroy/OnChanges -->
-
-<div *ngIf="destroy" class="container d-flexs">
-  <h1>🏚</h1>
-</div>
-
-<div *ngIf="!destroy" class="container d-flexs">
-  <h1>🏠</h1>
-</div>
-<button (click)="destroy = !destroy" class="mx-5">Muratori</button>
 
 <app-footer></app-footer>

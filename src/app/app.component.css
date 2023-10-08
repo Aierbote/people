@@ -1,0 +1,10 @@
+.alert-secondary p {
+  font-size: 2em;
+  font-weight: 300;
+  font-size: 2.3rem;
+}
+
+.alert-secondary span {
+  padding-right: 0.5em;
+  margin-right: 0.5em;
+}
