@@ -11,3 +11,15 @@
 #carouselExample {
   width: auto;
 }
+
+#sixRealms {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 61.875rem;
+  margin: auto;
+}
+
+#sixRealms .btn-group {
+  width: 6.3675rem;
+}
