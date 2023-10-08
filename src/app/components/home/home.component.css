@@ -1,6 +1,11 @@
 #carouselExample {
   width: 79.0625rem;
   min-height: 22.6056rem;
+
+  background-image: url(https://cdn-icons-png.flaticon.com/512/7952/7952248.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 #carouselExample {
