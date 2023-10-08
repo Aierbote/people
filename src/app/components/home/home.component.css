@@ -23,3 +23,9 @@
 #sixRealms .btn-group {
   width: 6.3675rem;
 }
+
+span.carousel-control-next-icon,
+span.carousel-control-prev-icon {
+  background-color: black !important;
+  border-radius: 36% !important;
+}
