@@ -13,6 +13,12 @@
   margin-bottom: 8px;
 }
 
+<<<<<<< HEAD
 mat-card:hover {
   background-color: #e4e4e4de;
+=======
+/* TODO: BUG */
+mat-card:hover {
+  background-color: #000000de;
+>>>>>>> 1ffa1e45b9ecbba5a2f76a01d06a84e42b235509
 }
