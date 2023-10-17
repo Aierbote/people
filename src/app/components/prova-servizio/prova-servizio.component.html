@@ -1,0 +1,62 @@
+<h2>prova-servizio works!</h2>
+
+<!-- semplice ng-container/template per stamparmi paragrafi dal mio Service - NOTE : Non funziona -->
+<!-- VERSIONE ng-container -->
+<!-- <ng-container *ngFor="let s_ of skykids">
+  <p>
+    <span *ngIf="s_.isOnline">
+      {{ s_.name }} has {{ s_.cape }} and {{ s_.hair }} hair. Height:
+      {{ s_.height }}
+    </span>
+  </p>
+</ng-container> -->
+
+<!-- VERSIONE ng-template -->
+<!-- <ng-template ngFor let-s_ [ngForOf]="skykids">
+  <p>
+    <span>
+      {{ s_.name }} has {{ s_.cape }} and {{ s_.hair }} hair. Height:
+      {{ s_.height }}
+    </span>
+  </p>
+</ng-template> -->
+
+<div class="cards">
+  <!-- Cards with media area -->
+  <mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title-group>
+        <mat-card-title>Shiba Inu</mat-card-title>
+        <mat-card-subtitle>Small</mat-card-subtitle>
+        <img
+          mat-card-sm-image
+          src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+        />
+      </mat-card-title-group>
+    </mat-card-header>
+    <mat-card-content>
+      {{ longText }}
+    </mat-card-content>
+  </mat-card>
+
+  <!-- Cards scelte da me -->
+  <ng-template ngFor let-s_ [ngForOf]="skykids">
+    <!-- tentativo di usare il mat-ripple effect -->
+    <mat-card
+      class="example-card example-ripple-container mat-elevation-z4"
+      matRipple
+    >
+      <mat-card-header>
+        <mat-card-title-group>
+          <mat-card-title>{{ s_.name }}</mat-card-title>
+          <mat-card-subtitle>Small</mat-card-subtitle>
+          <img mat-card-sm-image src="{{ s_.capeUrl }}" />
+          <img mat-card-sm-image src="{{ s_.hairUrl }}" />
+        </mat-card-title-group>
+      </mat-card-header>
+      <mat-card-content>
+        {{ longText }}
+      </mat-card-content>
+    </mat-card>
+  </ng-template>
+</div>
