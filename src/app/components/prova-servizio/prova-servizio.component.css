@@ -17,3 +17,11 @@
 mat-card:hover {
   background-color: #e4e4e4de;
 }
+
+.utenteOnline {
+  background-color: #ffea0769;
+}
+
+.utenteOffline {
+  background-color: #0c67ef69;
+}

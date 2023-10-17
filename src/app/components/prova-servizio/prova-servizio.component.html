@@ -45,6 +45,7 @@
     <mat-card
       class="example-card example-ripple-container mat-elevation-z4"
       matRipple
+      [ngClass]="{ utenteOnline: s_.isOnline, utenteOffline: !s_.isOnline }"
     >
       <mat-card-header>
         <mat-card-title-group>
