@@ -9,14 +9,20 @@ import { HomeComponent } from './components/home/home.component';
 import { ProvaServizioComponent } from './components/prova-servizio/prova-servizio.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+// routing
+import { RouterModule } from '@angular/router';
+import { HomeSpaceComponent } from './components/home-space/home-space.component';
+import { LinkZeldaComponent } from './components/link-zelda/link-zelda.component';
+
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, FooterComponent, HomeComponent],
+  declarations: [AppComponent, NavbarComponent, FooterComponent, HomeComponent, HomeSpaceComponent, LinkZeldaComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     // aggiunto per fare la card con Material Design
     ProvaServizioComponent,
+    RouterModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
