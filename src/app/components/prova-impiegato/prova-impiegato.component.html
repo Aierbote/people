@@ -1,0 +1,20 @@
+<p>prova-impiegato works!</p>
+<ng-template ngFor let-impieg [ngForOf]="impiegati">
+  <p>
+    <span>{{ impieg.nome }} </span>
+    <span>{{ impieg.cognome | uppercase }} </span>
+    <span>{{ impieg.codFisc | lowercase }} </span>
+    <span *ngIf="impieg.stipendio % 2 == 0"
+      >{{ impieg.stipendio | currency : "EUR" : "code" : "4.2-5" }}
+    </span>
+    <span *ngIf="impieg.stipendio % 2 != 0"
+      >{{ impieg.stipendio | currency : "EUR" : "symbol" : "4.2-5" }}
+    </span>
+    <span *ngIf="impieg.nome == 'Alberto'"
+      >{{ impieg.natoIl | date : "dd-MM-yy" }}
+    </span>
+    <span *ngIf="impieg.nome == 'Fatima'"
+      >{{ impieg.natoIl | date : "shortDate" }}
+    </span>
+  </p>
+</ng-template>

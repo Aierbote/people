@@ -8,9 +8,10 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { ProvaServizioComponent } from './components/prova-servizio/prova-servizio.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ProvaImpiegatoComponent } from './components/prova-impiegato/prova-impiegato.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, FooterComponent, HomeComponent],
+  declarations: [AppComponent, NavbarComponent, FooterComponent, HomeComponent, ProvaImpiegatoComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
