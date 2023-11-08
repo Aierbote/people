@@ -1,11 +1,19 @@
 <footer>
   <section>
     <figure>
-      <img
-        class="logo"
-        src="https://lh3.googleusercontent.com/a/ACg8ocLnn6Lz01_XIa7_GSS5Xg6izjTnbG8Snbv4y6QTrG2nYw=s83-c-mo"
-        alt="pfp stevejobs.academy"
-      />
+      <picture>
+        <!-- TODO : non so perché questa non funzioni, forse è angular? -->
+        <source
+          class="logo"
+          srcset="../../../assets/img/alberto.jpg"
+          media="(min-width: 600px)"
+        />
+        <img
+          class="logo"
+          src="https://lh3.googleusercontent.com/a/ACg8ocLnn6Lz01_XIa7_GSS5Xg6izjTnbG8Snbv4y6QTrG2nYw=s83-c-mo"
+          alt="pfp stevejobs.academy"
+        />
+      </picture>
       <a href="https://github.com/Aierbote">
         <!--
           <svg height="64px" width="64px" class="logo">
@@ -33,9 +41,17 @@
 
   <section>
     <a href="https://stevejobs.academy/">
-      <img
+      <!-- TODO : immagine scaduta ?¿ -->
+      <!-- <img
         class="logo"
         src="https://pps.whatsapp.net/v/t61.24694-24/310855267_212158111159675_2377313463308820742_n.jpg?ccb=11-4&oh=01_AdSYNs83TxOXcGBSqyqsvbTWB3YfnFzeAG1cHDLht8QUWA&oe=65297CB7&_nc_sid=000000&_nc_cat=102 "
+        alt="logo of ITS Steve Jobs Academy"
+        title="ITS Steve Jobs Academy"
+      /> -->
+      <img
+        class="logo"
+        id="sja"
+        src="../../../assets/img/logo-sja.png"
         alt="logo of ITS Steve Jobs Academy"
         title="ITS Steve Jobs Academy"
       />

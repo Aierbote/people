@@ -54,6 +54,11 @@ figcaption + p {
   border-radius: 50%;
 }
 
+#sja {
+  border-radius: 0;
+  width: 200px;
+}
+
 #sky-logo {
   width: 120%;
 }
