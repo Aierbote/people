@@ -8,6 +8,9 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'homespace', component: HomeSpaceComponent },
   { path: 'link2nintendo', component: LinkZeldaComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  // TODO: generarmi un componente not found
+  // { path: '**', component: PageNotFoundComponent },
 ];
 
 @NgModule({
