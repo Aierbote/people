@@ -49,6 +49,7 @@ footer + section > p {
 
 footer figcaption {
   font-weight: 600;
+  color: black;
 }
 
 figcaption + p {
@@ -58,6 +59,12 @@ figcaption + p {
 .logo {
   width: 114px;
   border-radius: 50%;
+}
+
+#logo-gh-oneline {
+  background-color: white;
+  border-radius: 50%;
+  padding: 2.8%;
 }
 
 #sja {
