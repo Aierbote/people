@@ -85,3 +85,7 @@ figure + p {
 #sky-logo:hover {
   box-shadow: inset 0px -15px 20px 11px #72b8da;
 }
+
+section#TGC-owner {
+  background-color: white !important;
+}
