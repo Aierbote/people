@@ -44,7 +44,7 @@ footer + section {
 }
 
 footer + section > p {
-  text-shadow: 5px 4px 4px #72b8da;
+  text-shadow: 0.3125rem 0.25rem 0.25rem #72b8da;
 }
 
 footer figcaption {
@@ -52,8 +52,14 @@ footer figcaption {
   color: black;
 }
 
-figcaption + p {
+.blackBold {
+  font-weight: 600;
+  color: black;
+}
+
+figure + p {
   font-weight: 300;
+  width: 13.75rem;
 }
 
 .logo {
