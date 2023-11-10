@@ -40,11 +40,11 @@
 
   <section>
     <a href="https://stevejobs.academy/">
-      <picture>
+      <picture (mouseover)="itsHover(true)" (mouseleave)="itsHover(false)">
         <source
           class="logo"
           id="sja"
-          srcset="../../../assets/img/logo-sja.png"
+          [srcset]="logoITS"
           alt="logo of ITS Steve Jobs Academy from assets"
           title="ITS Steve Jobs Academy"
         />

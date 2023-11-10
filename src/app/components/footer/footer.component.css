@@ -19,11 +19,17 @@ footer > section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-footer > section {
   text-align: center;
 }
+
+/* transizione per un effetto hover/mouseover/mouseleave fluido
+
+NON FA AL CASO MIO */
+/* footer > section .logo,
+footer > section picture,
+footer > section img  {
+  transition: all 1s ease;
+} */
 
 footer > section:first-child {
   flex-basis: 30%;
